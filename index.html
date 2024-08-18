@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Películas Locales</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 style="background-color: rgb(232, 192, 255); border-radius: 10px; margin: 10%,0%,10%,0;">Películas para Isabella la Bella</h1>
+
+    </header>
+
+    <main>
+        <section id="action">
+            <h2>Películas Isabella</h2>
+            <div class="movie-list">
+                <div class="movie-item">
+                    <img src="image/mi villano favorito 4.jfif" alt="Poster de Película 1">
+                    <h3>Mi Villano Favorito</h3>
+                    <button onclick="playMovie('videos/Mi Villano Favorito 4.mkv')">Ver Película</button>
+                </div>
+                <div class="movie-item">
+                    <img src="image/gato con botas.jfif" alt="Poster de Película 2">
+                    <h3>Gato con Botas</h3>
+                    <button onclick="playMovie('videos/Gato con botas.mkv')">Ver Película</button>
+                </div>
+                <!-- Agrega más películas aquí -->
+            </div>
+        </section>
+
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tu Sitio de Películas</p>
+    </footer>
+
+    <div id="video-modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <video id="video-player" controls></video>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
